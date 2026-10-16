@@ -3,6 +3,10 @@ The best works on wayland and x11
 We don't need ubuntu tweaks
 
 ```
+sudo apt update
+sudo apt install build-essential git
+```
+```
 git clone https://github.com/rvaiya/keyd
 cd keyd
 make
@@ -49,5 +53,6 @@ n = esc
 ```
 reload keyd:
 ```
+sudo systemctl enable --now keyd
 sudo keyd reload
 ```
